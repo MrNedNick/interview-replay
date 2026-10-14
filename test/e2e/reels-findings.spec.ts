@@ -26,6 +26,7 @@ test("a note becomes evidence, and a second participant turns an anecdote into a
   await page.getByRole("button", { name: "Add finding" }).click();
   const card = page.getByRole("listitem").filter({ has: page.getByLabel("Finding 4", { exact: true }) });
   await expect(card).toContainText("No evidence yet");
+  expect((await card.getByLabel("Finding 4", { exact: true }).boundingBox())!.width).toBeGreaterThan(200);
   await card.getByRole("button", { name: "Add evidence" }).click();
   const picker = page.getByRole("dialog", { name: "Add evidence" });
   await picker.getByLabel("Search notes to cite").fill("#context");

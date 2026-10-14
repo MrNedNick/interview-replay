@@ -43,24 +43,24 @@ function Shell() {
   return (
     <div className="min-h-screen bg-surface text-text">
       <header className="sticky top-0 z-30 border-b border-border bg-surface/95 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-2.5">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-2.5">
           <a href={href.library()} className="flex items-center gap-2 font-semibold tracking-tight">
             <svg aria-hidden="true" viewBox="0 0 32 32" className="size-7 shrink-0"><rect width="32" height="32" rx="8" className="fill-accent" /><path d="M7 20h3v-8H7zm5 4h3V8h-3zm5-6h3v-4h-3zm5 3h3V11h-3z" className="fill-on-accent" /></svg>
-            <span className="hidden sm:inline">Interview Replay</span>
+            <span>Interview Replay</span>
           </a>
-          <nav aria-label="Main" className="-mx-1 flex min-w-0 flex-1 gap-0.5 overflow-x-auto px-1">
+          <nav aria-label="Main" className="order-last grid w-full grid-cols-5 gap-0.5 sm:order-none sm:flex sm:w-auto sm:min-w-0 sm:flex-1">
             {NAV.map(item => {
               const active = item.pages.includes(route.page);
               const count = counts[item.pages[0]];
               return (
                 <a key={item.label} href={item.to} aria-current={active ? "page" : undefined}
-                  className={cn("shrink-0 rounded-md px-2.5 py-1.5 text-sm whitespace-nowrap transition-colors", active ? "bg-accent/10 font-medium text-accent" : "text-text-muted hover:bg-surface-raised hover:text-text")}>
-                  {item.label}{count ? <span className="ml-1 text-xs opacity-70 tabular-nums">{count}</span> : null}
+                  className={cn("rounded-md px-1 py-1.5 text-center text-xs whitespace-nowrap transition-colors sm:shrink-0 sm:px-2.5 sm:text-left sm:text-sm", active ? "bg-accent/10 font-medium text-accent" : "text-text-muted hover:bg-surface-raised hover:text-text")}>
+                  {item.label}{count ? <span className="ml-1 hidden text-xs opacity-70 tabular-nums sm:inline">{count}</span> : null}
                 </a>
               );
             })}
           </nav>
-          <ThemeToggle storageKey="interview-replay-theme" />
+          <ThemeToggle storageKey="interview-replay-theme" className="ml-auto sm:ml-0" />
         </div>
       </header>
       <main className="mx-auto max-w-6xl space-y-4 px-4 py-6">

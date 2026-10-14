@@ -14,6 +14,12 @@ test("the sample study opens, survives a reload and works in both themes", async
     await expect(page.locator("html")).toHaveClass(theme);
     await noHorizontalScroll(page);
   }
+  const width = page.viewportSize()!.width;
+  for (const link of await page.getByRole("navigation", { name: "Main" }).getByRole("link").all()) {
+    const box = (await link.boundingBox())!;
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(width);
+  }
   expect(errors).toEqual([]);
 });
 

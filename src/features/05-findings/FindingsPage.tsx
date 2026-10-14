@@ -86,14 +86,14 @@ function FindingCard({ finding, index, count, onPlay }: { finding: Finding; inde
 
   return (
     <li className="rounded-lg border border-border bg-surface p-4 shadow-card">
-      <div className="flex flex-wrap items-start gap-2">
+      <div className="flex items-start gap-2">
         <span className="mt-1 text-sm font-semibold text-text-muted tabular-nums">{index + 1}.</span>
         <textarea defaultValue={finding.title} key={finding.title} aria-label={`Finding ${index + 1}`} maxLength={140} rows={1}
           onBlur={e => { const input = e.currentTarget; if (input.value.trim() !== finding.title) void run(ws => editFinding(ws, finding.id, { title: input.value }, new Date())).then(refused => { if (refused) input.value = finding.title; }); }}
           onKeyDown={e => { if (e.key === "Enter") { e.preventDefault(); e.currentTarget.blur(); } }}
-          className="min-w-0 flex-1 resize-none rounded-md border border-transparent bg-transparent px-1 font-semibold [field-sizing:content] hover:border-border focus:border-accent focus:outline-none" />
-        <Badge tone={support.tone}>{support.text(strength)}</Badge>
+          className="w-full min-w-0 flex-1 resize-none rounded-md border border-transparent bg-transparent px-1 font-semibold [field-sizing:content] hover:border-border focus:border-accent focus:outline-none" />
       </div>
+      <Badge tone={support.tone} className="mt-1 ml-6">{support.text(strength)}</Badge>
       <textarea defaultValue={finding.detail} key={finding.detail} aria-label={`Detail for finding ${index + 1}`} placeholder="Why it matters, what to try…" maxLength={4000} rows={2}
         onBlur={e => { if (e.target.value.trim() !== finding.detail) void run(ws => editFinding(ws, finding.id, { detail: e.target.value }, new Date())); }}
         className="mt-2 w-full resize-y rounded-md border border-border bg-surface px-3 py-2 text-sm [field-sizing:content] focus:border-accent focus:outline-none" />

@@ -48,6 +48,7 @@ test("deleting a participant removes their sessions and their name everywhere", 
   await page.getByRole("listitem").filter({ hasText: /^Jonas/ }).getByRole("button", { name: "Delete their data" }).click();
   await expect(page.getByRole("dialog")).toContainText("Their recording and its stored file, 4 notes, 1 clip and 3 citations go");
   await page.getByRole("button", { name: "Delete everything about them" }).click();
+  await expect(page.getByText("Jonas's data was deleted from this browser.")).toBeVisible();
   await expect(page.getByRole("listitem").filter({ hasText: /^Jonas/ })).toHaveCount(0);
   await page.reload();
   await expect(page.getByLabel("Report preview")).not.toContainText("Jonas");
