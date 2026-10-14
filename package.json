@@ -1,0 +1,42 @@
+{
+  "name": "interview-replay",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b",
+    "test:e2e": "playwright test",
+    "demo:package": "vite build --base ./ --outDir artifacts/demo && node scripts/package-demo.mjs",
+    "samples": "node scripts/make-samples.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "clsx": "^2.1.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "fake-indexeddb": "^6.2.5",
+    "jsdom": "^29.1.1",
+    "oxlint": "^1.88.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}
