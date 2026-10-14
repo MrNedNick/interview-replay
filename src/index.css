@@ -1,0 +1,6 @@
+@import "./styles/tokens.css";
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  mark { background: color-mix(in srgb, var(--color-warning) 30%, transparent); color: inherit; border-radius: 2px; }
+}

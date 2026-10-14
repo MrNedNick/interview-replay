@@ -1,0 +1,124 @@
+{
+  "maya": {
+    "file": "basket-session-1.mp4",
+    "title": "Basket checkout · Session 1",
+    "durationMs": 56333,
+    "lines": [
+      {
+        "speaker": "Interviewer",
+        "text": "Thanks for joining, Maya. Can you tell me how you usually plan your weekly groceries?",
+        "start": 800,
+        "end": 5725
+      },
+      {
+        "speaker": "Participant",
+        "text": "Mostly on Sunday evening. I make a list on my phone, and then I order from whatever app has a free delivery slot.",
+        "start": 6325,
+        "end": 12956
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Let's look at the checkout. What did you expect to happen when you tapped Pay?",
+        "start": 13556,
+        "end": 17497
+      },
+      {
+        "speaker": "Participant",
+        "text": "Honestly, I thought it would show me the delivery time first. Instead it jumped straight to the card form, and I wasn't sure if my slot was still reserved.",
+        "start": 18097,
+        "end": 27040
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "How did that feel?",
+        "start": 27640,
+        "end": 28578
+      },
+      {
+        "speaker": "Participant",
+        "text": "A bit stressful. Last month I lost a slot that way, so now I take a screenshot of the time before I pay.",
+        "start": 29178,
+        "end": 36147
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "What about the substitutions step?",
+        "start": 36747,
+        "end": 38643
+      },
+      {
+        "speaker": "Participant",
+        "text": "I skipped it. The word substitutions sounds like extra work. If it said, what should we do if something is out of stock, I would read it.",
+        "start": 39243,
+        "end": 47398
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "If you could change one thing, what would it be?",
+        "start": 47998,
+        "end": 50364
+      },
+      {
+        "speaker": "Participant",
+        "text": "Show the delivery slot and the total on the same screen, right next to the pay button.",
+        "start": 50964,
+        "end": 55653
+      }
+    ]
+  },
+  "jonas": {
+    "file": "basket-session-2.m4a",
+    "title": "Basket checkout · Session 2",
+    "durationMs": 42497,
+    "lines": [
+      {
+        "speaker": "Interviewer",
+        "text": "Thanks, Jonas. How often do you order groceries online?",
+        "start": 800,
+        "end": 4682
+      },
+      {
+        "speaker": "Participant",
+        "text": "Every week, usually on my lunch break, so I have about ten minutes.",
+        "start": 5282,
+        "end": 9639
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Walk me through the checkout you just did.",
+        "start": 10239,
+        "end": 12251
+      },
+      {
+        "speaker": "Participant",
+        "text": "It was fine until the payment page. I couldn't see when the delivery would arrive, so I scrolled back up to check the slot. That cost me a minute.",
+        "start": 12851,
+        "end": 21016
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Did anything else slow you down?",
+        "start": 21616,
+        "end": 23153
+      },
+      {
+        "speaker": "Participant",
+        "text": "The substitutions question. I didn't understand it, so I left the default. Later I got oat milk instead of regular milk, which was annoying.",
+        "start": 23753,
+        "end": 32610
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "What would make you trust the checkout more?",
+        "start": 33210,
+        "end": 35198
+      },
+      {
+        "speaker": "Participant",
+        "text": "A clear summary. Time, address, total. One screen. Then I would just press pay.",
+        "start": 35798,
+        "end": 41897
+      }
+    ]
+  }
+}
