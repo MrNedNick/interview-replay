@@ -2,6 +2,8 @@
 
 Review user-research interviews in the browser: replay a recording, note what you notice at the moment it happens, tag and search those moments across every interview, cut them into highlight reels, and back each finding with the moments that show it. Recordings and notes stay on your device.
 
+**Live demo:** https://mrnednick.github.io/interview-replay/ — open “Try the sample study” for two annotated synthetic interviews.
+
 ![Interview Replay: a synthetic sample interview with its notes, the timeline under the video and a note being written at 0:21](docs/screenshot.png)
 
 ## What it does
